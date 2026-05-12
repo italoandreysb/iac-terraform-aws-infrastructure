@@ -42,3 +42,19 @@ Set via `.env` (using `TF_VAR_` prefix) or `terraform.tfvars`:
 ```bash
 terraform destroy
 ```
+
+### Install the AWS Key
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+rm -rf awscliv2.zip 
+aws configure
+```
+
+Insira:
+
+- Access Key (generate in AWS console)
+- Secret Key
+- região (us-east-1)
+- formato (json)
