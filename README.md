@@ -18,7 +18,9 @@ This project provisions AWS infrastructure using **Terraform**. It creates:
 - AWS credentials configured (`aws configure` or env vars)
 
 ## Quick Start
-1. Generate the access key with secret access key (IAM) and EC2 key on AWS Console
+1. In the AWS console, generate an Access Key and Secret Access Key using IAM.
+2. In the AWS console, generate an EC2 Key Pair in the same region where the infrastructure will be deployed.
+3. Run:
 
 ```bash
 cp .env_example .env
